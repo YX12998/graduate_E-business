@@ -13,6 +13,7 @@ body {
 	padding: 0;
 }
 
+/* 轮播 */
 .swiper-container {
 	width: 100%;
 	margin-left: auto;
@@ -38,4 +39,23 @@ body {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+
+/* 内容 */
+.produce h2{
+	text-align: center;
+	color: purple;
+	font-weight: bold;
+}
+.thumbnail{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+	color: black; 
+	box-shadow: 5px 5px 5px;
+}
+.thumbnail:hover{
+	
+	text-decoration: none;
+	color: purple;
 }
