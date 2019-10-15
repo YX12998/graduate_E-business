@@ -42,20 +42,41 @@ body {
 }
 
 /* 内容 */
-.produce h2{
+h2{
 	text-align: center;
 	color: purple;
 	font-weight: bold;
 }
+
+.title01{
+	line-height: 40px;
+	background: #aaa;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
 .thumbnail{
 	text-decoration: none;
 	font-size: 16px;
-	text-align: center;
+	/* text-align: center; */
+	background: #eee;
 	color: black; 
-	box-shadow: 5px 5px 5px;
+	/* box-shadow: 3px 3px 3px inset; */
+}
+.thumbnail p{
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+	background: #ddd;
 }
 .thumbnail:hover{
-	
+	/* box-shadow: 3px 3px 3px; */
 	text-decoration: none;
-	color: purple;
+	transform: scale(1.1);
+	/* color: purple; */
+}
+#footer{
+	height: 120px;
+	background: #000;
+	color: #fff;
 }
