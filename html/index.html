@@ -120,11 +120,11 @@
 
 			<div class="row">
 				<div class="col-sm-6 col-md-3 listPai">
-					<a href="#" class="thumbnail">
+					<div id="list01" class="thumbnail">
 						<img src="../images/佐助01.jpg">
-						<p>¥134.00</p>
+						<p>¥{{ sprice }}</p>
 						<span>佐助火爆手办 最低价!!!</span>
-					</a>
+					</div>
 				</div>
 
 				<div class="col-sm-6 col-md-3">
@@ -342,7 +342,7 @@
 		<!-- footer -->
 		<div id="footer">
 			<div class="container" style="background: #00AEF3;">
-				<div class="row" style="background: #00AEF3;"></div>
+				<div class="row" style="background: #;"></div>
 			</div>
 		</div>
 		
@@ -351,8 +351,17 @@
 </html>
 <script type="text/javascript" src="../js/jquery-2.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
+	var produce = new Vue({
+		el:"#list01",
+		data:{
+			sprice:200
+		}
+	});
+	
+	// 轮播
 	var swiper = new Swiper('.swiper-container', {
 		slidesPerView: 1,
 		spaceBetween: 30,
